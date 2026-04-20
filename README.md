@@ -1,6 +1,30 @@
 # EvilCaptive
-Python Tool for Physical phishing
-the tool will exctract JSON file with valid cookies after full login (with MFA approvment) to O365
+EvilCaptive is a physical social engineering and phishing tool designed for Red Team engagements. It simulates a legitimate corporate WiFi authentication process to capture credentials and bypass MFA in real-time.
+
+## Overview
+The tool automates the creation of an Evil Twin access point (SSID). When a victim connects, they are presented with a sophisticated Microsoft-branded Captive Portal.
+
+## How It Works
+WiFi Interception: Broadcasts a fake SSID (e.g., office_32) and forces a Captive Portal pop-up on the victim's device.
+
+Credential Harvesting: A local Flask server hosts a pixel-perfect Microsoft login clone that collects the victim's username and password.
+
+MFA Integration: The tool communicates in real-time with login.microsoftonline.com. It triggers a push notification on the victim's mobile device and retrieves the MFA Number Matching code.
+
+Number Display: The portal displays the verification number to the victim, who then approves the request in their Microsoft Authenticator app.
+
+Session Capture: Upon successful authentication, the tool captures and logs valid Session Cookies, allowing the operator to bypass MFA and gain access to the account.
+
+
+## Key Features
+Modern Auth Flow: Supports Microsoft's latest number-matching MFA.
+
+Automated Setup: Handles DNS spoofing, DHCP, and IPTables routing out of the box.
+
+Typosquatting Support: Configurable to run on deceptive domains (e.g., login.rnicrosfotonline.com).
+
+Operational Logs: Saves captured cookies in a JSON format compatible with browser cookie editors.
+
 
 ### Installing:
 ```bash
