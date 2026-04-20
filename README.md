@@ -5,7 +5,7 @@ EvilCaptive is a physical social engineering and phishing tool designed for Red 
 The tool automates the creation of an Evil Twin access point (SSID). When a victim connects, they are presented with a sophisticated Microsoft-branded Captive Portal.
 
 ## How It Works
-WiFi Interception: Broadcasts a fake SSID (e.g., office_32) and forces a Captive Portal pop-up on the victim's device.
+WiFi Interception: Broadcasts a fake SSID and forces a Captive Portal pop-up on the victim's device.
 
 Credential Harvesting: A local Flask server hosts a pixel-perfect Microsoft login clone that collects the victim's username and password.
 
