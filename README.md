@@ -1,6 +1,6 @@
 # EvilCaptive
 Python Tool for Physical phishing
-the tool will exctrating JSON file with valid cookies after full authentication (with MFA approvment)
+the tool will exctract JSON file with valid cookies after full login (with MFA approvment) to O365
 
 ### Installing:
 ```bash
