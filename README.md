@@ -1,5 +1,6 @@
 # EvilCaptive
 Python Tool for Physical phishing
+the tool will exctrating JSON file with valid cookies after full authentication (with MFA approvment)
 
 ### Installing:
 ```bash
